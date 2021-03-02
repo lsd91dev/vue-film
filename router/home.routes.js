@@ -1,0 +1,10 @@
+const { express } = require('../app');
+const router = express.Router();
+
+router.get('/', (req, res) => {
+    return res.json({
+        ok: true,
+    })
+});
+
+module.exports = router;
